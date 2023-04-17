@@ -16,12 +16,106 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer utilities {
+  .font-logo {
+    font-family: "Delicious Handrawn", cursive;
+  }
+
+  .bg-brand {
+    background-color: #141416;
+  }
+
+  .text-brand {
+    color: #f0f8ff;
+  }
+
+  .gr-teal-limegreen {
+    background: #00b09b;
+    background: -webkit-linear-gradient(to right, #00b09b 0%, #96c93d 100%);
+    background: -moz-linear-gradient(to right, #00b09b 0%, #96c93d 100%);
+    background: linear-gradient(to right, #00b09b 0%, #96c93d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gr-limegreen-blue {
+    background: #96c93d;
+    background: -webkit-linear-gradient(to right, #96c93d 0%, #0575e6 100%);
+    background: -moz-linear-gradient(to right, #96c93d 0%, #0575e6 100%);
+    background: linear-gradient(to right, #96c93d 0%, #0575e6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gr-orange-yelloworange {
+    background: #fc4a1a;
+    background: -webkit-linear-gradient(to right, #fc4a1a 0%, #f7b733 100%);
+    background: -moz-linear-gradient(to right, #fc4a1a 0%, #f7b733 100%);
+    background: linear-gradient(to right, #fc4a1a 0%, #f7b733 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gr-blue-pink {
+    background: #0575e6;
+    background: -webkit-linear-gradient(to right, #0575e6 0%, #ec4899 100%);
+    background: -moz-linear-gradient(to right, #0575e6 0%, #ec4899 100%);
+    background: linear-gradient(to right, #0575e6 0%, #ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-brand bg-brand font-sans;
+  }
+
+  #tech-logos {
+    @apply flex flex-wrap justify-center mx-auto max-w-screen-lg mt-20;
+  }
+
+  #tech-logos > li {
+    @apply flex flex-col space-y-1 items-center justify-center text-[0.922rem] mx-8 mb-16;
+  }
+
+  #tech-logos svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .map-img {
+    @apply w-full h-auto;
+  }
+
+  .underlined {
+    position: relative;
+    text-decoration: none !important;
+    white-space: nowrap;
+  }
+
+  .underlined::after,
+  .underlined.is-active::after {
+    content: "";
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+    transform-origin: left;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+
+  .underlined:hover:after,
+  .underlined:focus:after,
+  .is-active.underlined:after {
+    background-color: currentColor;
+    transform: scaleX(1);
+  }
 }
