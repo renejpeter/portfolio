@@ -54,7 +54,7 @@ const SiteHeader = () => {
         </nav>
 
         <Link
-          href="#contact"
+          href="/#contact"
           className="inline-flex items-center justify-center rounded border-2 h-10 px-4 transition-colors hover:text-teal-500 hover:border-teal-500"
         >
           <span className="font-medium">Get in Touch</span>
