@@ -4,10 +4,10 @@ const SiteFooter = () => {
   return (
     <footer
       id="site-footer"
-      className="fixed inset-x-0 bottom-8 h-20 px-12 flex items-center justify-between z-20"
+      className="fixed inset-x-0 bottom-4 lg:bottom-8 h-16 lg:h-20 px-6 lg:px-12 flex items-center justify-between z-20 "
     >
       <nav>
-        <ul className="flex items-center space-x-8 text-brand">
+        <ul className="flex items-center space-x-6 text-brand lg:space-x-8">
           <li role="presentation">
             <Link
               href="https://github.com/zabocado"
@@ -17,7 +17,7 @@ const SiteFooter = () => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 256 249"
-                className="w-8 h-8"
+                className="w-6 h-6 lg:w-8 lg:h-8"
               >
                 <path
                   fill="currentColor"
@@ -40,7 +40,7 @@ const SiteFooter = () => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 256 256"
-                className="w-8 h-8"
+                className="w-6 h-6 lg:w-8 lg:h-8"
               >
                 <path
                   fill="currentColor"
@@ -56,7 +56,7 @@ const SiteFooter = () => {
         </ul>
       </nav>
 
-      <p className="text-right text-sm opacity-50">
+      <p className="text-right text-xs lg:text-sm opacity-50">
         &copy; {new Date().getFullYear()} René Peter. All rights reserved.
       </p>
     </footer>

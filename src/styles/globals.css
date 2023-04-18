@@ -76,7 +76,7 @@
   }
 
   #tech-logos {
-    @apply flex flex-wrap justify-center mx-auto max-w-screen-lg mt-20;
+    @apply flex flex-wrap justify-center mx-auto max-w-screen-lg mt-10 lg:mt-20;
   }
 
   #tech-logos > li {

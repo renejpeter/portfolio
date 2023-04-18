@@ -5,15 +5,15 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center py-[25vh]"
     >
-      <div className="w-full mx-auto max-w-screen-xl">
-        <div className="flex items-center gap-10">
+      <div className="w-full mx-auto max-w-screen-xl px-6 lg:px-8">
+        <div className="lg:flex items-center gap-10">
           <div className="flex-1">
-            <h1 className="text-7xl font-extrabold tracking-tight leading-tight mb-6 gr-blue-pink">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-3 lg:mb-6 gr-blue-pink">
               Get in Touch
             </h1>
-            <ul className="space-y-6 text-xl">
+            <ul className="space-y-3 lg:space-y-6 text-base lg:text-xl">
               <li>
                 <div className="flex items-start space-x-4">
                   <div className="flex items-center justify-center w-12 h-12 rounded-full bg-pink-500 text-pink-500 bg-opacity-10">
@@ -23,7 +23,7 @@ const ContactSection = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-7 h-7"
+                      className="w-5 h-5 lg:w-7 lg:h-7"
                     >
                       <path
                         strokeLinecap="round"
@@ -52,7 +52,7 @@ const ContactSection = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-7 h-7"
+                      className="w-5 h-5 lg:w-7 lg:h-7"
                     >
                       <path
                         strokeLinecap="round"
@@ -76,7 +76,7 @@ const ContactSection = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-8 h-8"
+                      className="w-6 h-6 lg:w-8 lg:h-8"
                     >
                       <path
                         strokeLinecap="round"
@@ -98,7 +98,7 @@ const ContactSection = () => {
             </ul>
           </div>
 
-          <div className="flex-1">
+          <div className="hidden lg:flex flex-1">
             <Image
               src="https://i.imgur.com/aUFcgNf.png"
               alt="Map of Southern Caribbean"
