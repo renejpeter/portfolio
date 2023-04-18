@@ -27,26 +27,6 @@ const SiteHeader = () => {
               ></path>
             </svg>
           </Link>
-          {/* <div
-            id="site-logo"
-            className="relative flex items-center h-10 space-x-1.5"
-          >
-            <div className="bg-white rounded-sm h-full w-3"></div>
-            <div className="flex flex-col space-y-1.5 w-3 h-full">
-              <div className="flex-1 bg-white rounded-sm"></div>
-              <div className="flex-1 bg-teal-500 rounded-sm"></div>
-            </div>
-            <div className="bg-teal-500 rounded-sm h-full w-3"></div>
-            <div className="bg-white rounded-sm h-full w-3"></div>
-            <div className="flex flex-col space-y-1 w-3 h-full">
-              <div className="h-1/2 bg-white rounded-sm"></div>
-            </div>
-            <Link
-              href="/"
-              className="absolute inset-0"
-              aria-label="Rene J. Peter logo"
-            ></Link>
-          </div> */}
         </div>
 
         <nav className="hidden md:block flex-1">
