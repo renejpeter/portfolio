@@ -13,7 +13,7 @@ const SiteHeader = () => {
         <div className="absolute left-6 top-5 lg:left-12 lg:top-7">
           <Link
             href="/"
-            className="flex items-center justify-center -mt-1"
+            className="flex items-center justify-center -mt-1 text-white"
             aria-label="Rene J. Peter logo"
           >
             <svg
