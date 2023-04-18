@@ -30,7 +30,7 @@ const SiteHeader = () => {
         </div>
 
         <nav className="hidden md:block flex-1">
-          <ul className="flex items-center justify-center space-x-8">
+          <ul className="flex items-center justify-center space-x-8 font-medium">
             <li>
               <Link href="/" className="inline-flex underlined">
                 <span>Home</span>
