@@ -3,7 +3,7 @@ const posts = Array(10).fill(null);
 export default function PortfolioPage() {
   return (
     <article id="portfolio" className="min-h-screen py-[25vh]">
-      <div className="w-full mx-auto px-6 lg:px-8">
+      <div className="w-full mx-auto px-6 lg:px-12">
         <h1 className="font-extrabold text-4xl md:text-5xl lg:text-7xl text-white text-center mb-10 lg:mb-20">
           Recent Work
         </h1>

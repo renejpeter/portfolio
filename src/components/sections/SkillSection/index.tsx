@@ -7,7 +7,7 @@ const SkillSection = () => {
       id="skills"
       className="min-h-screen flex items-center justify-center py-[25vh]"
     >
-      <div className="w-full px-6 lg:px-8">
+      <div className="w-full px-6 lg:px-12">
         <h2 className="text-4xl md:text-5xl lg:text-7xl gr-limegreen-blue text-center font-extrabold mx-auto max-w-screen-md mb-3 lg:mb-6">
           Skills &amp; Experience
         </h2>

@@ -4,7 +4,7 @@ const AboutSection = () => {
       id="about"
       className="min-h-screen flex items-center justify-center py-[25vh]"
     >
-      <div className="w-full mx-auto max-w-screen-xl px-6 lg:px-8">
+      <div className="w-full mx-auto max-w-screen-xl px-6 lg:px-12">
         <div className="md:flex items-center gap-10">
           <div className="flex-1 md:flex items-center justify-center mb-6 lg:mb-0">
             <div className="bg-gray-900 rounded-full h-40 w-40 md:w-60 md:h-60 lg:h-80 lg:w-80 border-4 border-sky-300"></div>

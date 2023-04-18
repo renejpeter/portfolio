@@ -4,7 +4,7 @@ const IntroSection = () => {
       id="intro"
       className="min-h-screen flex items-center justify-center py-[25vh]"
     >
-      <div className="w-full mx-auto max-w-screen-xl px-6 lg:px-8">
+      <div className="w-full mx-auto max-w-screen-xl px-6 lg:px-12">
         <div className="flex gap-10">
           <div className="flex-1">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white leading-tight mb-3 lg:mb-6">
