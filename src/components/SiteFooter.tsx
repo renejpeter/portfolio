@@ -2,11 +2,8 @@ import Link from "next/link";
 
 const SiteFooter = () => {
   return (
-    <footer
-      id="site-footer"
-      className="fixed inset-x-0 bottom-4 lg:bottom-8 h-16 lg:h-20 px-6 lg:px-12 flex items-center justify-between z-20 "
-    >
-      <nav>
+    <footer id="site-footer" className="px-6 lg:px-12 py-16">
+      {/* <nav>
         <ul className="flex items-center space-x-6 text-brand lg:space-x-8">
           <li role="presentation">
             <Link
@@ -54,9 +51,9 @@ const SiteFooter = () => {
             </Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
-      <p className="text-right text-xs lg:text-sm opacity-50">
+      <p className="text-center text-xs lg:text-sm opacity-50">
         &copy; {new Date().getFullYear()} René Peter. All rights reserved.
       </p>
     </footer>
