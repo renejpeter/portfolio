@@ -6,18 +6,18 @@ export default function PortfolioPage() {
   return (
     <>
       <Head>
-        <title>Recent Work - René Peter</title>
+        <title>Past Projects - René Peter</title>
         <meta
           name="description"
           content="Some of my more recent projects, along with some older stuff that I'm still very proud to say I've worked on."
         />
-        <link rel="canonical" href="https://renepeter.xyz/portfolio" />
+        <link rel="canonical" href="https://renepeter.xyz/projects" />
       </Head>
 
-      <article id="portfolio" className="min-h-screen py-[25vh]">
+      <article id="projects" className="min-h-screen py-[25vh]">
         <div className="w-full mx-auto px-6 lg:px-12">
           <h1 className="font-extrabold text-4xl md:text-5xl lg:text-7xl text-white text-center mb-10 lg:mb-20">
-            Recent Work
+            Past Projects
           </h1>
         </div>
 

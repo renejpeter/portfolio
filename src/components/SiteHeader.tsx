@@ -1,3 +1,4 @@
+import { routes } from "@/constants/routes";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -32,32 +33,32 @@ const SiteHeader = () => {
         <nav className="hidden md:block flex-1">
           <ul className="flex items-center justify-center space-x-6 lg:space-x-8 text-md font-medium lg:text-lg">
             <li>
-              <Link href="/" className="inline-flex underlined">
+              <Link href={routes.home} className="inline-flex underlined">
                 <span>Home</span>
               </Link>
             </li>
             <li>
-              <Link href="/#about" className="inline-flex underlined">
+              <Link href={routes.about} className="inline-flex underlined">
                 <span>About</span>
               </Link>
             </li>
             <li>
-              <Link href="/#skills" className="inline-flex underlined">
+              <Link href={routes.skills} className="inline-flex underlined">
                 <span>Skills</span>
               </Link>
             </li>
             <li>
-              <Link href="/portfolio" className="inline-flex underlined">
-                <span>Portfolio</span>
+              <Link href={routes.projects} className="inline-flex underlined">
+                <span>Projects</span>
               </Link>
             </li>
-            <li>
-              <Link href="#" className="inline-flex underlined">
+            {/* <li>
+              <Link href={routes.blog} className="inline-flex underlined">
                 <span>Blog</span>
               </Link>
-            </li>
+            </li> */}
             <li>
-              <Link href="/#contact" className="inline-flex underlined">
+              <Link href={routes.contact} className="inline-flex underlined">
                 <span>Contact</span>
               </Link>
             </li>
@@ -67,7 +68,7 @@ const SiteHeader = () => {
         <ul className="absolute top-5 right-6 flex items-center space-x-2.5 md:top-[1.125rem] lg:right-12 lg:top-[1.625rem]">
           <li role="presentation">
             <Link
-              href="https://github.com/zabocado"
+              href={routes.socials.github}
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-11 h-11"
               target="_blank"
@@ -91,7 +92,7 @@ const SiteHeader = () => {
 
           <li role="presentation">
             <Link
-              href="https://www.linkedin.com/in/renepeter868/"
+              href={routes.socials.linkedIn}
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-11 h-11"
               target="_blank"

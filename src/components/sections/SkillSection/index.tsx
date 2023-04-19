@@ -1,5 +1,6 @@
 import Link from "next/link";
 import TechStackBlock from "./TechStackBlock";
+import { routes } from "@/constants/routes";
 
 const SkillSection = () => {
   return (
@@ -20,7 +21,7 @@ const SkillSection = () => {
         </p>
         <p className="text-md lg:text-lg text-center mb-2 lg:mb-4">
           <Link
-            href="/portfolio"
+            href={routes.projects}
             className="inline-flex items-center space-x-2 text-orange-500 font-medium hover:underline"
           >
             <span>Check out my recent work</span>
