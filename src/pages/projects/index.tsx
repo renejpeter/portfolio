@@ -5,8 +5,6 @@ import KiskadeeWorkImage from "@/assets/task-manager-ss.png";
 import RenePeterWorkImage from "@/assets/portfolio-ss.png";
 import Link from "next/link";
 
-const posts = Array(10).fill(null);
-
 export default function PortfolioPage() {
   return (
     <>
