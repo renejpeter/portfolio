@@ -162,10 +162,11 @@ export default function PortfolioPage() {
                     "Laravel",
                     "PHP",
                     "MariaDB",
-                    "Redis",
-                    "TailwindCSS",
-                    "AlpineJS",
-                    "Secure Dashboard",
+                    "Memcached",
+                    "Content Management System",
+                    "Newsletter",
+                    "Bootstrap",
+                    "jQuery",
                     "Full-Stack",
                   ].map((n) => (
                     <li key={n} role="presentation">
