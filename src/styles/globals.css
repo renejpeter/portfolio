@@ -119,3 +119,9 @@
     transform: scaleX(1);
   }
 }
+
+@layer utilities {
+  .text-md {
+    font-size: 0.922rem;
+  }
+}
