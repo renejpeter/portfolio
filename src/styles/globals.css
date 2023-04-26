@@ -17,6 +17,10 @@
 }
 
 @layer utilities {
+  .text-md {
+    font-size: 0.922rem;
+  }
+
   .font-logo {
     font-family: "Delicious Handrawn", cursive;
   }
@@ -72,7 +76,7 @@
   }
 
   body {
-    @apply text-brand bg-brand font-sans;
+    @apply text-brand bg-brand font-sans relative;
   }
 
   #tech-logos {
@@ -117,11 +121,5 @@
   .is-active.underlined:after {
     background-color: currentColor;
     transform: scaleX(1);
-  }
-}
-
-@layer utilities {
-  .text-md {
-    font-size: 0.922rem;
   }
 }
