@@ -72,10 +72,11 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
   }
 
   body {
+    scroll-behavior: smooth !important;
     @apply text-brand bg-brand font-sans relative;
   }
 
