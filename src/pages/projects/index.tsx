@@ -32,6 +32,7 @@ export default function PortfolioPage() {
                   src={RenePeterWorkImage}
                   alt="Rene Peter Portfolio"
                   className="rounded-xl"
+                  placeholder="blur"
                 />
               </div>
               <div className="flex-1">
@@ -95,6 +96,7 @@ export default function PortfolioPage() {
                   src={KiskadeeWorkImage}
                   alt="Task Manager Module"
                   className="rounded-xl"
+                  placeholder="blur"
                 />
               </div>
               <div className="flex-1">
@@ -140,6 +142,7 @@ export default function PortfolioPage() {
                   src={EcmWorkImage}
                   alt="ECM Trinidad Limited"
                   className="rounded-xl"
+                  placeholder="blur"
                 />
               </div>
               <div className="flex-1">
