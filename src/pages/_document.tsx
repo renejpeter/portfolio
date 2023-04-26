@@ -1,5 +1,3 @@
-import SiteFooter from "@/components/SiteFooter";
-import SiteHeader from "@/components/SiteHeader";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -19,14 +17,7 @@ export default function Document() {
         />
       </Head>
       <body>
-        <SiteHeader />
-
-        <main>
-          <Main />
-        </main>
-
-        <SiteFooter />
-
+        <Main />
         <NextScript />
       </body>
     </Html>
