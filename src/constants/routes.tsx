@@ -7,6 +7,6 @@ export const routes = {
   contact: "/#contact",
   socials: {
     github: "https://github.com/zabocado",
-    linkedIn: "https://www.linkedin.com/in/renepeter868/",
+    linkedIn: "https://www.linkedin.com/in/renejpeter/",
   },
 };
