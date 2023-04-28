@@ -4,6 +4,7 @@ import EcmWorkImage from "@/assets/ecm-ss.png";
 import KiskadeeWorkImage from "@/assets/task-manager-ss.png";
 import RenePeterWorkImage from "@/assets/portfolio-ss.png";
 import Link from "next/link";
+import { projects } from "@/constants/projects";
 
 export default function PortfolioPage() {
   return (
@@ -26,184 +27,64 @@ export default function PortfolioPage() {
 
         <div className="w-full max-w-screen-xl mx-auto px-6 lg:px-12">
           <div className="space-y-32">
-            <div className="flex flex-col md:flex-row items-center gap-12 text-md md:text-base">
-              <div className="flex-1">
-                <Image
-                  src={RenePeterWorkImage}
-                  alt="Rene Peter Portfolio"
-                  className="rounded-xl"
-                  placeholder="blur"
-                />
-              </div>
-              <div className="flex-1">
-                <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4 md:mb-6">
-                  Personal Portfolio
-                </h2>
-                <p className="mb-6">
-                  A simple website built with NextJS to illustrate who I am, my
-                  skills, experiences and what technologies I&apos;ve worked
-                  with both in the past and currently.
-                </p>
+            {projects.map((p, i) => (
+              <div
+                key={i}
+                className="flex flex-col md:flex-row items-center gap-12 text-md md:text-base"
+              >
+                <div className="flex-1">
+                  <Image
+                    src={p.image}
+                    alt={p.imageAlt}
+                    className="rounded-xl"
+                    placeholder="blur"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4 md:mb-6">
+                    {p.title}
+                  </h2>
+                  <p className="mb-6">{p.summary}</p>
 
-                <ul className="flex flex-wrap gap-2 mb-6">
-                  {[
-                    "NextJS",
-                    "React",
-                    "TypeScript",
-                    "TailwindCSS",
-                    "Frontend",
-                    "Static Site Generation",
-                  ].map((n) => (
-                    <li key={n} role="presentation">
-                      <div className="flex items-center justify-center px-3.5 h-7 rounded-full bg-white bg-opacity-10">
-                        <span className="text-sm">{n}</span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
+                  <ul className="flex flex-wrap gap-2 mb-6">
+                    {p.tags.map((n) => (
+                      <li key={n} role="presentation">
+                        <div className="flex items-center justify-center px-3.5 h-7 rounded-full bg-white bg-opacity-10">
+                          <span className="text-sm">{n}</span>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
 
-                <p>
-                  <Link
-                    href="https://renepeter.xyz"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="inline-flex items-center space-x-1.5 text-orange-500 hover:underline"
-                  >
-                    <span>Visit website</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-5 h-5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                      />
-                    </svg>
-                  </Link>
-                </p>
+                  {p.url && p.url !== null && (
+                    <p>
+                      <Link
+                        href={p.url}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className="inline-flex items-center space-x-1.5 text-orange-500 hover:underline"
+                      >
+                        <span>Visit website</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-5 h-5"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                          />
+                        </svg>
+                      </Link>
+                    </p>
+                  )}
+                </div>
               </div>
-            </div>
-            {/* eof RP */}
-
-            <div className="flex flex-col md:flex-row items-center gap-12 text-md md:text-base">
-              <div className="flex-1">
-                <Image
-                  src={KiskadeeWorkImage}
-                  alt="Task Manager Module"
-                  className="rounded-xl"
-                  placeholder="blur"
-                />
-              </div>
-              <div className="flex-1">
-                <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4 md:mb-6">
-                  Ship With Kiskadee
-                </h2>
-                <p className="text-md md:text-base mb-6">
-                  Client requested a task management module to be built as an
-                  extension of their main business application, and accessible
-                  through their internal NextJS web-app. A system was
-                  implemented utilizing existing authentication methods,
-                  multiple views, assignments, deadlines, comments and
-                  statistics to be used for KPIs.
-                </p>
-                <ul className="flex flex-wrap gap-2">
-                  {[
-                    "Backend",
-                    "RESTful API",
-                    "Laravel",
-                    "PHP",
-                    "Frontend",
-                    "NextJS",
-                    "React",
-                    "MariaDB",
-                    "Redis",
-                    "TailwindCSS",
-                    "AlpineJS",
-                  ].map((n) => (
-                    <li key={n} role="presentation">
-                      <div className="flex items-center justify-center px-3.5 h-7 rounded-full bg-white bg-opacity-10">
-                        <span className="text-sm">{n}</span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            {/* eof Kiskadee */}
-
-            <div className="flex flex-col md:flex-row items-center gap-12 text-md md:text-base">
-              <div className="flex-1">
-                <Image
-                  src={EcmWorkImage}
-                  alt="ECM Trinidad Limited"
-                  className="rounded-xl"
-                  placeholder="blur"
-                />
-              </div>
-              <div className="flex-1">
-                <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4 md:mb-6">
-                  ECM Trinidad Limited
-                </h2>
-                <p className="mb-6">
-                  Client needed a new website to better represent their entry
-                  into the residential and commercial market within their
-                  industry. Website needed to be managed by a content management
-                  system and include a catalog of brands as well as product
-                  categories that the company offers.
-                </p>
-
-                <ul className="flex flex-wrap gap-2 mb-6">
-                  {[
-                    "Laravel",
-                    "PHP",
-                    "MariaDB",
-                    "Memcached",
-                    "Content Management System",
-                    "Newsletter",
-                    "Bootstrap",
-                    "jQuery",
-                    "Full-Stack",
-                  ].map((n) => (
-                    <li key={n} role="presentation">
-                      <div className="flex items-center justify-center px-3.5 h-7 rounded-full bg-white bg-opacity-10">
-                        <span className="text-sm">{n}</span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-
-                <p>
-                  <Link
-                    href="https://ecmtt.com"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="inline-flex items-center space-x-1.5 text-orange-500 hover:underline"
-                  >
-                    <span>Visit website</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-5 h-5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                      />
-                    </svg>
-                  </Link>
-                </p>
-              </div>
-            </div>
-            {/* eof ECM */}
+            ))}
           </div>
         </div>
       </article>
